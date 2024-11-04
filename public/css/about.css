@@ -169,10 +169,32 @@ top:40vh;
     margin: 2rem;
 }
 
-/* awards */
-.award-item{
-    margin: 2rem;
+.audio {
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
 }
+
+.audio .title {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.audio .about-audio-text {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.audio audio {
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+}
+
 /* interest */
 .int-items{
     margin:2rem;
