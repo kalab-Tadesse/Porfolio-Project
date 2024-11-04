@@ -1,0 +1,44 @@
+<div class="project-new">
+    {{#if project.pid}} <h1 class="projec-new-name"> Modify Project</h1>
+    {{else}} <h1 class="project-new-name"> New Project</h1>
+    {{/if}}
+    <div class="project-form">
+        {{#if project.pid}}
+        <form action="/project/modify/{{project.pid}}" method="POST">
+            {{else}}
+            <form action="/project/new" method="POST">
+                {{/if}}
+                <label for="projname">Name : </label>
+                <input type="text" id="projname" name="projname" required="required" {{#if project.pname}}
+                    value="{{project.pname}}" {{/if}}> <br />
+
+                <label for="projyear">Year : </label>
+                <input type="number" id="projyear" name="projyear" min="1990" max="2050" required="required" {{#if
+                    project.pyear}} value="{{project.pyear}}" {{/if}}> <br />
+
+                <label for="projdesc">Description : </label>
+                <textarea name="projdesc" id="projdesc" required="required"> {{#if project.pdesc}}{{project.pdesc}}
+                {{/if}}</textarea> <br />
+
+                <label for="projtype">Type : </label>
+                <select name="projtype" id="projtype">
+                    <option value="Research" {{#if (eq project.ptype "Research" )}}selected="selected" {{/if}}>Research
+                    </option>
+                    <option value="Teching" {{#if (eq project.ptype "Teching" )}}selected="selected" {{/if}}>Teching
+                    </option>
+                    <option value="Personal" {{#if (eq project.ptype "Personal" )}}selected="selected" {{/if}}>Personal
+                    </option>
+                </select><br />
+
+                <label for="projurl"> URL : </label>
+                <input type="text" name="projurl" id="projurl" placeholder="/img/something.png"
+                    required="required"><br />
+
+                <label for="projuid">User ID: </label>
+                <input type="number" name="projuid" id="projuid" required="required" {{#if project.uid}}
+                    value="{{project.uid}}" {{/if}}><br />
+
+                <input type="submit" value={{#if project.pid}} "Modify Project" {{else}}"Create new project "{{/if}} />
+        </form>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+/* layout for the whole container */
+.users-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: #ff7613;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.users-name {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+
+.new-user {
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+.users-grid {
+  display: flex;
+  flex-direction: column; 
+  gap: 15px; 
+}
+
+
+.users-info {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.users-id, .users-name, .users-username {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.users-id h2, .users-name h2, .users-username h2 {
+  display: inline;
+  font-size: 16px;
+  margin: 0;
+  font-weight: normal;
+  color: #333333;
+}
+
+.users-info p{
+  color: #333333;
+  font-size:small;
+  font-weight: 100;
+}
+
+@media (max-width: 768px) {
+  .users-info{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .users-name {
+      font-size: 24px;
+  }
+
+  .users-info {
+      padding: 10px;
+  }
+
+  .users-id h2, .users-name h2, .users-username h2 {
+      font-size: 14px; 
+  }
+
+}

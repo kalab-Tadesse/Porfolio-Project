@@ -1,0 +1,71 @@
+/* Layout main continer  */
+.users-new {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* styles */
+.new-user-titel {
+    text-align: center;
+    font-size: 28px;
+    color: #ff7613;
+    margin-bottom: 20px;
+}
+
+
+.user-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Avstånd mellan fält */
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #ff7613;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e66e0b;
+}
+
+/* adjusting screen size for smaller screens */
+@media (max-width: 600px) {
+    .users-new {
+        padding: 15px;
+        margin:10px
+    }
+
+    .new-user-titel {
+        font-size: 24px;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+}

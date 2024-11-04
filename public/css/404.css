@@ -1,0 +1,52 @@
+/* Container for the 404 page */
+.container-404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #353434; 
+    font-family: Arial, sans-serif;
+}
+
+.info-404 {
+    text-align: center;
+    padding: 30px;
+    background-color: #161616; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+.info-404 h1 {
+    font-size: 40px;
+    color: #ff7613; 
+    margin-bottom: 20px;
+}
+
+
+.info-404 p {
+    font-size: 18px;
+    color: #4d4c4c;
+}
+
+@media (max-width: 768px) {
+    .container-404{
+        height: 40vh;
+        width: 100%;
+    }
+
+    .info-404 {
+        margin: 30px;
+        padding: 20px; /* Less padding for small screens */
+    }
+
+    .info-404 h1 {
+        font-size: 28px; /* Smaller font for the heading */
+    }
+
+    .info-404 p {
+        font-size: 16px; /* Smaller font for the paragraph */
+    }
+}

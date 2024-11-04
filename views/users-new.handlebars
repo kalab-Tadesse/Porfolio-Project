@@ -1,0 +1,25 @@
+<div class="users-new">
+    {{#if user.uid}} <h1 class="new-user-titel"> Modify User</h1>
+    {{else}} <h1 class="new-user-titel"> New User</h1>
+    {{/if}}
+    <div class="user-form">
+        {{#if user.uid}}
+        <form action="/users/modify/{{user.uid}}" method="POST">
+            {{else}}
+            <form action="/users/new" method="POST">
+                {{/if}}
+                <label for="name">Name : </label>
+                <input type="text" id="name" name="name" required="required" {{#if user.uname}}
+                    value="{{user.uname}}" {{/if}}> <br />
+
+                <label for="userusername">Username : </label>
+                <input type="text" id="userusername" name="userusername" required="required" {{#if
+                    user.uusername}} value="{{user.uusername}}" {{/if}}> <br />
+
+                <label for="uhashedpassword">Password : </label>
+                <input type="text" name="uhashedpassword" id="uhashedpassword" required="required"><br />
+
+                <input type="submit" value={{#if user.uid}} "Modify User" {{else}}"Create new User "{{/if}} />
+        </form>
+    </div>
+</div>

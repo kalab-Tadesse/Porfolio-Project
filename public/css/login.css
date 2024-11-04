@@ -1,0 +1,68 @@
+/* Layout */
+#login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full höjd på skärmen */
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+/*style for the main container */
+.mytextcard {
+    background-color: #ff7613;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* styles*/
+.mytextcard h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.mytextcard label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+    text-align: left;
+}
+
+.mytextcard input[type="text"],
+.mytextcard input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.mytextcard input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #2196F3;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mytextcard input[type="submit"]:hover {
+    background-color: #1976D2;
+}
+
+/* style for error message */
+.error {
+  background-color: aliceblue;
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}

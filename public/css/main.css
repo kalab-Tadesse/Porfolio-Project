@@ -1,0 +1,112 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* General styles for the header and nav */
+.main-nav {
+  background-color: #ff7613;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.main-nav li {
+  margin-right: 15px;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: flexbox;
+}
+
+.main-nav a:hover {
+  background-color: #555;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px){
+  .main-nav{ 
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 3rem;
+      gap: 7rem;
+  }
+  .main-nav nav ul {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+  }
+
+}
+
+/* style and layout for Fotter */
+ 
+.fotter {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: row;
+}
+
+.fotter>div {
+  flex: 1;
+}
+
+.soc-item {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(white);
+}
+
+.social-items a:hover {
+  color: #ff7613;
+}
+
+.social-items a {
+  color: #e6eee891;
+  text-decoration: none;
+}
+
+
+.social-item svg {
+  width: 2rem;
+}
+
+hr {
+  grid-column: 1/-1;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  border: none;
+  border-top: 2px solid rgba(255, 255, 255, 0.964);
+}
+
+@media (max-width: 768px) {
+  .fotter {
+      flex-direction: row;
+      align-items: center;
+      margin: 50px;
+  }
+}

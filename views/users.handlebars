@@ -1,0 +1,31 @@
+<div class="users-container">
+    <h1 class="users-name">Users</h1>
+
+    {{#if session.isAdmin}}
+    <div><a class="new-user" href="/users/new">Add new user</a></div>
+    {{/if}}
+
+    <div class="users-grid">
+        {{#each users}}
+        <div class="users-info">
+            <div class="user-details">
+                <div class="users-id">
+                    <p>ID:</p> <h2>{{uid}}</h2>
+                </div>
+                <div class="users-name">
+                    <p>Name:</p> <h2>{{uname}}</h2>
+                </div>
+                <div class="users-username">
+                    <p>Username:</p> <h2>{{uusername}}</h2>
+                </div>
+            </div>
+            {{#if ../session.isAdmin}}
+            <div class="admin-controls" id="admin-modifydelete">
+                <a href="/users/modify/{{uid}}" class="modify" >Modify</a>
+                <a href="/users/delete/{{uid}}" class="delete" >Delete</a>
+            </div>
+            {{/if}}
+        </div>
+        {{/each}}
+    </div>
+</div>

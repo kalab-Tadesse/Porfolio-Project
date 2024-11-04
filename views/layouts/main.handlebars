@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/about.css">
+  <link rel="stylesheet" href="/css/contact.css">
+  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/projects.css">
+  <link rel="stylesheet" href="/css/project.css">
+  <link rel="stylesheet" href="/css/404.css">
+  <link rel="stylesheet" href="/css/users.css">
+  <link rel="stylesheet" href="/css/skills.css"> 
+  <link rel="stylesheet" href="/css/login.css">
+  <link rel="stylesheet" href="/css/project-new.css">
+  <link rel="stylesheet" href="/css/user-new.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <title>Kalab's Portfolio</title>
+</head>
+
+<body>
+  <header class="main-nav">
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/skills">Skills</a></li>
+        <li><a href="/contact">Contact</a></li>
+         {{#if session.isAdmin}}
+         <li><a href="/users">Manage users</a></li>
+         {{/if}}
+        {{#if session.isLoggedIn}}
+        <li class="menulogin">Hi, {{session.name}} - <a href="/logout">Logout</a></li>
+        {{else}}
+        <li class="menulogin"><a href="/login">Login</a></li>
+        {{/if}}
+      </ul>
+    </nav>
+  </header>
+
+  {{{body}}}
+
+  <hr>
+
+  <div class="fotter">
+    <div class="contact">
+      <h3 class="title">Contact </h3>
+      <div class="contact-info-fotter">
+        <p class="description">Jönköping, Sweden </p>
+        <p class="description">070 070 70 70 </p>
+        <p class="description">kalab@hotmail.com </p>
+      </div>
+    </div>
+    <div class="socials">
+      <h3 class="title">socials</h3>
+      <div class="social-items">
+        <a href="https://www.instagram.com/kalab.zz/" class="soc-item">
+          <i data-feather="instagram"></i>
+          <span>/kalab.zz</span>
+        </a>
+        <a href="https://www.linkedin.com/in/kalab-tadesse-ba9023150/" class="soc-item">
+          <i data-feather="linkedin"></i>
+          <span>/kalab.zz</span>
+        </a>
+        <a href="https://github.com/kalab-Tadesse" class="soc-item">
+          <i data-feather="github"></i>
+          <span>/kalab.zz</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    feather.replace();
+  </script>
+</body>
+
+</html>

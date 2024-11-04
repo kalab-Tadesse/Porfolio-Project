@@ -1,0 +1,78 @@
+/* Layout for the whole container */
+.project-container {
+  width: 80%;
+  margin: 0 auto; 
+  background-color: #f9f9f9; 
+  border-radius: 10px; 
+  padding: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  font-family: Arial, sans-serif; 
+}
+
+
+.pro-titel h1 {
+  font-size: 24px;
+  color: #333; 
+  text-align: center; 
+  margin-bottom: 20px;
+} 
+
+/* for the img*/
+.pro-img {
+  width: 100%; 
+  display: flex; 
+  justify-content: center;
+}
+
+.pro-img img {
+  width: 70%; 
+  height: auto;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  object-fit: contain;
+}
+
+
+.project-info {
+  margin-top: 20px; 
+  padding: 10px;
+  background-color: #fff; 
+  border-radius: 10px; 
+}
+
+.pro-year-type h2 {
+  font-size: 20px;
+  color: #666; 
+  margin: 0;
+  text-align: center;
+}
+
+
+.pro-desc {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #2b2a2a; 
+  text-align: justify; 
+}
+
+/* reponsiv deepending on creen size */
+@media screen and (max-width: 768px) {
+  .project-container {
+      width: 90%; 
+      padding: 15px;
+      margin-top: 10px;
+  }
+  
+  .pro-titel h1 {
+      font-size: 20px;
+  }
+  
+  .pro-year-type h2 {
+      font-size: 18px;
+  }
+  
+  .pro-desc {
+      font-size: 14px;
+  }
+}

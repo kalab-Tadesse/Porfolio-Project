@@ -1,0 +1,156 @@
+/* layouts */
+.projects-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* styling */
+.projects-card {
+    background-color: #ff7613;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.projects-card h2 {
+    margin-top: 0;
+    color: #f0eeee;
+}
+
+.projects-card p {
+    color: #c3bdbd;
+}
+
+.new-pro {
+    background-color: #18e60df2;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.view-project {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.view-project:hover {
+    background-color: #2980b9;
+}
+
+.admin-controls {
+    margin-top: 10px;
+}
+
+.modify, .delete, .new-pro {
+    margin-right: 10px;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.new-pro {
+    background-color: #18e60df2;
+}
+
+.modify {
+    background-color: #f1c40f;
+}
+
+.modify:hover {
+    background-color: #d4ac0d;
+}
+
+.delete {
+    background-color: #ff0000;
+}   
+
+.delete:hover {
+    background-color: #c0392b;
+}
+
+.image-for-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+/* style for pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Pagination links */
+.pagination a {
+    color: #fbf6f6;
+    padding: 10px 15px;
+    margin: 0 5px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.pagination a:hover {
+    background-color: #ff7613;
+    color: white;
+}
+
+/* Active site */
+.pagination a.active {
+    background-color: #ff7613;
+    color: white;
+    border-color: #ff7613;
+}
+
+/* Previous and next page style */
+.pagination a:first-child,
+.pagination a:last-child {
+    font-weight: bold;
+}
+
+/* Media query for smaller screens  */
+@media (max-width: 768px) {
+    .projects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-card {
+        width: 100%;
+    }
+
+    .projects-container{
+        display: grid;
+        flex-direction: row;
+        
+
+    }
+}
