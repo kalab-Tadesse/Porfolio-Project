@@ -17,7 +17,7 @@ const session = require('express-session')
 const connectSqlite3 = require('connect-sqlite3')
 
 // define constants and variables
-const port = 8080
+const port =  process.env.PORT || 3000;
 const app = express()
 
 // database
