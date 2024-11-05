@@ -4,6 +4,7 @@
   "description": "This is my project for thr TGWK12 Web Development Fundamentals course at Jönköping Universty - 2024.",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
