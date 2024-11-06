@@ -148,6 +148,7 @@ app.get('/users/new', function (req, res) {
 
         res.redirect('/')
 console.log
+hahaha
 
     }
 })
