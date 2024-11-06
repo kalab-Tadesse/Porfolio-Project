@@ -147,6 +147,7 @@ app.get('/users/new', function (req, res) {
         console.log("User is not admin, and is not allowed to delet")
 
         res.redirect('/')
+console.log
 
     }
 })
